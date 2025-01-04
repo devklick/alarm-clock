@@ -6,6 +6,7 @@ import customPlugins from "./vite/plugins";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), ...customPlugins],
+  base: "https://devklick.github.io/alarm-clock/",
   resolve: {
     alias: {
       // See https://github.com/tabler/tabler-icons/issues/1233#issuecomment-2428245119
