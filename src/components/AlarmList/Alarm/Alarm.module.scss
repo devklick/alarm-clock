@@ -1,0 +1,51 @@
+@import "/src/_globals.scss";
+
+.alarm {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid $app-foreground;
+    padding: 2%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    box-shadow: 0 0 10px 2px #14151a;
+    overflow: visible;
+
+    &--disabled {
+        border: 1px solid $app-foreground;
+        box-shadow: none;
+    }
+
+    &__left,
+    &__mid,
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        min-width: 0;
+    }
+
+    &__right {
+        justify-content: center;
+    }
+
+    &__mid {
+        width: 100%;
+    }
+
+    &__mid-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2%;
+        height: 100%;
+    }
+
+    &__snooze-duration {
+        width: 100%;
+        flex: 0 1 0px;
+        height: 100%;
+    }
+}

@@ -1,0 +1,21 @@
+.settings-modal {
+    gap: 20px;
+
+    &__field {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__ok {
+        margin-top: 20px;
+        align-self: flex-end;
+    }
+}
+
+.alarm-sound-picker {
+    &__right {
+        display: flex;
+    }
+}

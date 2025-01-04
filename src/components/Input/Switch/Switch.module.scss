@@ -1,0 +1,39 @@
+@import "/src/globals";
+
+$switch-width: 3rem; // Default width
+$switch-height: 1.5rem; // Default height
+
+.switch {
+  width: $switch-width;
+  height: $switch-height;
+  background-color: transparent;
+  border-radius: $switch-height / 2;
+  border: 1px solid $app-foreground;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:focus {
+    border: 1px solid $color-secondary;
+  }
+
+  &.checked {
+    background-color: $color-primary;
+
+    .slider {
+      left: calc(100% - ($switch-height - 0.3rem));
+    }
+  }
+
+  .slider {
+    width: calc($switch-height - 0.3rem);
+    height: calc($switch-height - 0.3rem);
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0.15rem;
+    transform: translate(0, -50%);
+    transition: left 0.3s ease;
+  }
+}

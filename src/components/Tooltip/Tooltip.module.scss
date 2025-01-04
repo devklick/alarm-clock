@@ -1,0 +1,24 @@
+@import "/src/_globals";
+
+.tooltip {
+    position: absolute;
+    background-color: $app-background;
+    color: $app-foreground-focused;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid $app-foreground;
+    z-index: 1000;
+    transition: 0.2s ease;
+    opacity: 0;
+    pointer-events: none;
+
+    &--visible {
+        opacity: 100%;
+        pointer-events: visible;
+    }
+
+    &--hidden {
+        opacity: 0;
+        pointer-events: none;
+    }
+}

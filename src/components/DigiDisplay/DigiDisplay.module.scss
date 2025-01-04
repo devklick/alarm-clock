@@ -1,0 +1,24 @@
+.digi-display {
+    background-color: rgb(51, 51, 51);
+    padding: 3%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3.4/1;
+    box-shadow:
+        inset -2px -2px 10px black,
+        inset 1px 1px 2px 1px rgb(199, 199, 199),
+        0 0 40px 10px black;
+
+    &__grid {
+        display: grid;
+        grid-template-areas: "primary primary primary primary primary secondary";
+        gap: 3%;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 12px;
+    }
+}

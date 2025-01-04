@@ -1,0 +1,19 @@
+@import "/src/_globals.scss";
+
+.text-box {
+    width: 100%;
+    min-width: 0;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+
+    input {
+        all: unset;
+        border-bottom: 1px solid $app-foreground;
+
+        &:focus {
+            border-bottom: 1px solid $color-secondary;
+            color: white;
+        }
+    }
+}
