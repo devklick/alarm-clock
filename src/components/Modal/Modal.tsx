@@ -1,7 +1,8 @@
-import clsx from "clsx";
-import style from "./Modal.module.scss";
 import React, { useCallback, useEffect } from "react";
 import { IconXboxX } from "@tabler/icons-react";
+import clsx from "clsx";
+
+import style from "./Modal.module.scss";
 
 interface ModalProps {
   size?: "full" | "small";

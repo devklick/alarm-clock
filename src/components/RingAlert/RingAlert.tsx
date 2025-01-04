@@ -1,13 +1,15 @@
 import { useEffect } from "react";
-import { useAlarmSoundPlayer } from "../../hooks/audioHooks";
-import { useAlarms } from "../../stores/alarmStore";
-import styles from "./RingAlert.module.scss";
 import {
   IconAlarmMinus,
   IconAlarmSnooze,
   IconBellRinging,
 } from "@tabler/icons-react";
+
 import Modal from "../Modal";
+import { useAlarmSoundPlayer } from "../../hooks/audioHooks";
+import { useAlarms } from "../../stores/alarmStore";
+
+import styles from "./RingAlert.module.scss";
 
 interface RingAlertProps {
   alarmId: string;

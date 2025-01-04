@@ -1,5 +1,6 @@
-import { useSettings } from "../../stores/settingsStore";
 import Modal from "../Modal";
+import { useSettings } from "../../stores/settingsStore";
+
 import styles from "./InfoModal.module.scss";
 
 function InfoModal() {

@@ -1,11 +1,12 @@
 import { useState } from "react";
+import { IconAlarmPlus } from "@tabler/icons-react";
+
 import Alarm from "./Alarm/Alarm";
+import RingAlert from "../RingAlert";
+import Button from "../Input/Button";
 import { useAlarms } from "../../stores/alarmStore";
 
 import styles from "./AlarmList.module.scss";
-import RingAlert from "../RingAlert";
-import Button from "../Input/Button";
-import { IconAlarmPlus } from "@tabler/icons-react";
 
 type AlarmListState = "viewing" | "adding" | "editing";
 function AlarmList() {

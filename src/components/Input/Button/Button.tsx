@@ -1,8 +1,10 @@
 import React, { useRef } from "react";
-import { useClick } from "../../../hooks/pointerHooks";
-import styles from "./Button.module.scss";
 import clsx from "clsx";
+
 import Tooltip from "../../Tooltip";
+import { useClick } from "../../../hooks/pointerHooks";
+
+import styles from "./Button.module.scss";
 
 interface ButtonPropsBase {
   label?: string;
