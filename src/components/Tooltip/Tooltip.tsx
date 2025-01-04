@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
+
 import styles from "./Tooltip.module.scss";
 
 interface TooltipProps {

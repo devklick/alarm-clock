@@ -60,17 +60,13 @@ export function useClick<E extends HTMLElement>(
 
     if (!disabled) {
       element.addEventListener("mousedown", handleDown);
-      // element.addEventListener("touchstart", handleDown);
       document.addEventListener("mouseup", handleUp);
-      // document.addEventListener("touchend", handleUp);
     }
 
     return () => {
       if (!disabled) {
         element.removeEventListener("mousedown", handleDown);
-        // element.removeEventListener("touchstart", handleDown);
         document.removeEventListener("mouseup", handleUp);
-        // document.removeEventListener("touchend", handleUp);
       }
 
       if (timeout) clearTimeout(timeout);

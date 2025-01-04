@@ -3,9 +3,11 @@ import {
   IconInfoSquareRounded,
   IconSettings,
 } from "@tabler/icons-react";
-import styles from "./AppBar.module.scss";
+
 import Button from "../Input/Button";
 import { useSettings } from "../../stores/settingsStore";
+
+import styles from "./AppBar.module.scss";
 
 function AppBar() {
   const { openModal } = useSettings();

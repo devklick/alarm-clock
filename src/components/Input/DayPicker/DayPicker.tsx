@@ -1,7 +1,9 @@
 import clsx from "clsx";
-import { DayOfWeek, daysOfWeek } from "../../../stores/alarmStore";
-import styles from "./DayPicker.module.scss";
+
 import Label from "../Label";
+import { DayOfWeek, daysOfWeek } from "../../../stores/alarmStore";
+
+import styles from "./DayPicker.module.scss";
 
 interface DayPickerBaseProps {
   disabled?: boolean;
