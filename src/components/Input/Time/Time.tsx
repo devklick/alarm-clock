@@ -1,4 +1,3 @@
-import { useEffect, useRef, useState } from "react";
 import { TimeStruct as TimeStruct } from "../../../stores/alarmStore";
 
 import Num from "../Num";
