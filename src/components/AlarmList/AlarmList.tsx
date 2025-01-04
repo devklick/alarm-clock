@@ -34,16 +34,18 @@ function AlarmList() {
     <>
       <div className={styles["alarm-list"]}>
         <div className={styles["alarm-list-actions"]}>
-          <button onClick={() => setAlarmRinging("ringing")}>Test Alarm</button>
           {import.meta.env.DEV && (
-            <Button.Primary
-              label="Add Alarm"
-              onClick={setAdding}
-              disabled={!canAddAlarm}
-            >
-              <IconAlarmPlus color="white" />
-            </Button.Primary>
+            <button onClick={() => setAlarmRinging("ringing")}>
+              Test Alarm
+            </button>
           )}
+          <Button.Primary
+            label="Add Alarm"
+            onClick={setAdding}
+            disabled={!canAddAlarm}
+          >
+            <IconAlarmPlus color="white" />
+          </Button.Primary>
         </div>
         {/* This probably should not be part of the alarm list */}
         {alarmRinging && (
