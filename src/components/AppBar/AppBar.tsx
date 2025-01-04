@@ -14,7 +14,10 @@ function AppBar() {
   return (
     <div className={styles["app-bar"]}>
       <Button.Transparent>
-        <IconBrandGithubFilled color="white" />
+        <IconBrandGithubFilled
+          color="white"
+          onClick={() => open("https://github.com/devklick/alarm-clock")}
+        />
       </Button.Transparent>
       <Button.Transparent onClick={() => openModal("info")}>
         <IconInfoSquareRounded color="white" />
