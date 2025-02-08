@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-    devklick.github.io/alarm-clock
+    [https://devklick.github.io/alarm-clock](https://devklick.github.io/alarm-clock)
 </p>
 
 <br/>
