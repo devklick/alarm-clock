@@ -1,0 +1,23 @@
+.analog-clock-body {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+
+    &__frame {
+        border: 10px solid black;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-sizing: border-box;
+    }
+    &__content {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

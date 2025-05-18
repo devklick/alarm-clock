@@ -2,6 +2,8 @@ import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import { HourType } from "../hooks/timeHooks";
 
+type ClockType = "digital" | "analog";
+
 export const alarmSounds = [
   "Bird Song",
   "Descending",
@@ -27,6 +29,7 @@ interface SettingsState {
   clockForegroundColor: string;
   clockBackgroundColor: string;
   hourType: HourType;
+  clockType: ClockType;
   setClockForegroundColor(color: string): void;
   setClockBackgroundColor(color: string): void;
   setHourType(hourType: HourType): void;
@@ -36,6 +39,7 @@ interface SettingsState {
   modalType?: ModalType;
   openModal(modal: ModalType): void;
   closeModal(): void;
+  setClockType(clockType: ClockType): void;
 }
 
 export const useSettings = create<SettingsState>()(
@@ -43,6 +47,7 @@ export const useSettings = create<SettingsState>()(
     (set) => ({
       clockForegroundColor: "#fbff00",
       clockBackgroundColor: "#333333",
+      clockType: "analog",
       hourType: "24",
       alarmSound: "Simple",
       modalType: undefined,
@@ -68,6 +73,9 @@ export const useSettings = create<SettingsState>()(
         set((settings) => {
           return { hourType: settings.hourType === "12" ? "24" : "12" };
         });
+      },
+      setClockType(clockType) {
+        set({ clockType });
       },
     }),
     {

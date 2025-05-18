@@ -33,7 +33,7 @@ const datePartGetters: Record<DatePart, DateGetterKey<Date>> = {
   year: "getFullYear",
 };
 
-function useGetCurrentDatePart(part: DatePart): [number] {
+export function useGetCurrentDatePart(part: DatePart): [number] {
   const [value, setValue] = useState(new Date()[datePartGetters[part]]());
 
   useEffect(() => {

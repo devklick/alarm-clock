@@ -1,11 +1,11 @@
 import AlarmList from "./components/AlarmList";
 import AppBar from "./components/AppBar";
-import DigiDisplay from "./components/DigiDisplay";
 import InfoModal from "./components/InfoModal";
 import SettingsModal from "./components/SettingsModal";
 import { useSettings } from "./stores/settingsStore";
 
 import "./App.scss";
+import Clock from "./components/Clock";
 
 function App() {
   const { modalType } = useSettings();
@@ -14,7 +14,7 @@ function App() {
       {modalType === "info" && <InfoModal />}
       {modalType === "settings" && <SettingsModal />}
       <AppBar />
-      <DigiDisplay />
+      <Clock />
       <AlarmList />
     </div>
   );

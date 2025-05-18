@@ -1,0 +1,17 @@
+.analog-display {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__center {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        z-index: 0;
+    }
+}
